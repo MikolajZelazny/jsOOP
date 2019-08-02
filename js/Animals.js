@@ -1,7 +1,7 @@
 class Animals{
-     tab = []; //pusta tablica
+     //pusta tablica
      addAnimal(animal){
-        this.tab.join(animal);
+        thitab = []; s.tab.join(animal);
      }
 
 

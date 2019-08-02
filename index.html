@@ -9,16 +9,25 @@
     <body>
         <script>
             let wrobel = new Bird("nazwa", "waga", "wysokosc", "cwir");
-            let owczarek = new Dog("nazwa", "waga", "wysokosc", "hau");   
+            let owczarek = new Dog("nazwa", "waga", "wysokosc", "hau");  
+
+            console.log("Teraz beda wartosci bezposrednio ze zmiennych:");
             wrobel.makeSound();
             owczarek.makeSound();
-        </script>
-        
-        <script>
-            const tab = [wrobel, owczarek ];
-            tab.forEach(myFunction);
+ 
+            const tab = [owczarek,wrobel];
+            console.log(" ");
+            console.log("Teraz beda wartosci z tablicy:");
             
-            function myFunction() {
+            tab.forEach(myFunction); 
+
+            // forEach how is implementend
+            // for(int i=0 ; i<tab.lenght();i++){
+            //     tab[i].makeSound();
+            // }
+
+            function myFunction(tabElement) {
+                tabElement.makeSound();
             }
         </script>
 
