@@ -5,11 +5,23 @@
     <script src="js/Animal.js"></script>
     <script src="js/Bird.js"></script>
     <script src="js/Dog.js"></script>
-    
+    <script src="js/Animals.js"></script>
     <body>
         <script>
-            let animalAbstract = new Bird("nazwa", "waga", "wysokosc");   
+            let wrobel = new Bird("nazwa", "waga", "wysokosc", "cwir");
+            let owczarek = new Dog("nazwa", "waga", "wysokosc", "hau");   
+            wrobel.makeSound();
+            owczarek.makeSound();
         </script>
+        
+        <script>
+            const tab = [wrobel, owczarek ];
+            tab.forEach(myFunction);
+            
+            function myFunction() {
+            }
+        </script>
+
     </body>
     
 </html>
